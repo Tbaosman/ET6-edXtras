@@ -23,13 +23,12 @@ padded_string = "hi"
 # Boolean flag variable
 islong_enough = False
 while not islong_enough:  # use the flag variable to exit the loop
-    padded_string += padding
+    padded_string = padded_string + padding + "."
     print(padded_string)
 
     if len(padded_string) == 14:
         islong_enough = True
 
-# assert padded_string == "hi.:..:..:..:.", '"hi" should have 12 padding characters'
-assert padded_string == "hi.:.:.:.:.:.:", '"hi" should have 12 padding characters'
+assert padded_string == "hi.:..:..:..:.", '"hi" should have 12 padding characters'
 
 print("-- end --")
